@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.9)
+project( slice_image C CXX)  
+find_package( OpenCV REQUIRED )  
+add_executable( slice_image slice_image.cpp  )  
+target_link_libraries( slice_image ${OpenCV_LIBS} )  

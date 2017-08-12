@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.9)
+project( hello_window )  
+find_package( OpenCV REQUIRED)  
+add_executable( hello_window hello_window.cpp )  
+target_link_libraries( hello_window ${OpenCV_LIBS} )  
